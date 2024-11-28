@@ -1,5 +1,7 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /* 2. Remove default margin */
@@ -13,40 +15,135 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /* 8. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 /* root details */
 :root {
-    --primary-color: hsl(25, 97%, 53%);
+  --primary-color: hsl(25, 97%, 53%);
 
-    --neutral-white: hsl(0, 0%, 100%);
-    --neutral-light-grey: hsl(217, 12%, 63%);
-    --neutral-blue: hsl(213, 19%, 18%);
-    --neutral-dark-blue: hsl(216, 12%, 8%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-blue: hsl(213, 19%, 18%);
+  --neutral-dark-blue: hsl(216, 12%, 8%);
 
-    --fs-main: 15px;
+  --fs-main: 15px;
+  --ff-main: "Overpass", serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  background-color: var(--neutral-dark-blue);
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+}
+
+.main-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--neutral-blue);
+  width: 400px;
+  height: 400px;
+
+  padding: 35px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-page img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--neutral-white);
+}
+
+.main-page h1 {
+  color: var(--neutral-white);
+  font-weight: var(--fw-bold);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.main-page p {
+  color: var(--neutral-light-grey);
+  margin-bottom: 20px;
+}
+
+.score-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-bottom: 25px;
+}
+
+.rating {
+  color: var(--neutral-light-grey);
+  background-color: var(--neutral-white);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn {
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  margin-top: 10px;
+  font-weight: var(--fw-regular);
 }
