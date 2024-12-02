@@ -100,10 +100,13 @@ body {
 }
 
 .main-page img {
-  width: 20px;
-  height: 20px;
+  width: 17.5px;
+  height: 17.5px;
   border-radius: 50%;
-  background-color: var(--neutral-white);
+}
+
+.image {
+  
 }
 
 .main-page h1 {
@@ -121,14 +124,13 @@ body {
 .score-rating {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
 .rating {
   color: var(--neutral-light-grey);
-  background-color: var(--neutral-white);
+
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -138,12 +140,30 @@ body {
   justify-content: center;
 }
 
+.rating:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  color: var(--neutral-blue);
+}
+
+.rating:active,
+.submit-btn:active {
+  background-color: var(--neutral-white);
+  cursor: pointer;
+  color: var(--neutral-blue);
+}
+
 .submit-btn {
   padding: 10px;
   border-radius: 25px;
   border: none;
   text-transform: uppercase;
   background-color: var(--primary-color);
-  margin-top: 10px;
   font-weight: var(--fw-regular);
+  padding-bottom: 2.5px;
+  font-weight: var(--fw-bold);
+
+  height: 50px;
+
+  letter-spacing: 1px;
 }
