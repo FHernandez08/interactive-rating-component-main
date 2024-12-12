@@ -75,13 +75,14 @@ h6 {
   --fw-bold: 700;
 }
 
-body {
+/* body {
   background-color: var(--neutral-dark-blue);
   font-family: var(--ff-main);
   font-size: var(--fs-main);
 }
 
-.main-page {
+/* .main-page,
+.thank-you {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -103,10 +104,6 @@ body {
   width: 17.5px;
   height: 17.5px;
   border-radius: 50%;
-}
-
-.image {
-  
 }
 
 .main-page h1 {
@@ -166,4 +163,4 @@ body {
   height: 50px;
 
   letter-spacing: 1px;
-}
+} */
