@@ -17,46 +17,36 @@
   <title>Interactive Rating Component</title>
 </head>
 <body>
+  <div class="container">
+    <!--Main Page-->
+      <img src="images/icon-star.svg" alt="top left corner star">
 
-  <!-- Rating state start -->
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-  <div class="main-page">
-    <div class="image">
-      <img src="images/icon-star.svg" alt="top-left star" id="top-left-star">
-    </div>
+      <ul id="selection">
+        <li><button id="1">1</button></li>
+        <li><button id="2">2</button></li>
+        <li><button id="3">3</button></li>
+        <li><button id="4">4</button></li>
+        <li><button id="5">5</button></li>
+      </ul>
 
-    <h1>How did we do?</h1>
-    
-    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-    </p>
-    
-    <div class="score-rating">
-      <div class="rating" id="1">1</div>
-      <div class="rating" id="2">2</div>
-      <div class="rating" id="3">3</div>
-      <div class="rating" id="4">4</div>
-      <div class="rating" id="5">5</div>
-    </div>
-    
-    <button class="submit-btn">Submit</button>
-
-  </div>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <div class="thank-you">
-    <img src="images/illustration-thank-you.svg" alt="thank you image" class="thank-you-image">
-
-    <p class="choice-selected"></p>
-
-    <h1>Thank you!</h1>
-
-    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch.</p>
-
+      <button class="submit">Submit</button>
   </div>
 
-  <!-- Thank you state end -->
+    <!--Thank you page-->
+  <div class="thank-you hidden">
+      <img src="images/illustration-thank-you.svg" alt="thank you image">
+
+      <p class="gray">
+        You selected <span class="rating"></span> out of 5
+      </p>
+
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+  </div>
+   
 
   <!-- JS File -->
    <script src="index.js"></script>

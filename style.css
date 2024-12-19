@@ -1,63 +1,7 @@
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/* 2. Remove default margin */
 * {
   margin: 0;
-}
-body {
-  /* 3. Add accessible line-height */
-  line-height: 1.5;
-  /* 4. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-}
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/* 8. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* root details */
@@ -75,92 +19,14 @@ h6 {
   --fw-bold: 700;
 }
 
-/* body {
-  background-color: var(--neutral-dark-blue);
+body {
   font-family: var(--ff-main);
   font-size: var(--fs-main);
-}
-
-/* .main-page,
-.thank-you {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  background-color: var(--neutral-blue);
-  width: 400px;
-  height: 400px;
-
-  padding: 35px;
-  border-radius: 15px;
-
+  background-color: var(--neutral-dark-blue);
   display: flex;
   flex-direction: column;
-
-}
-
-.main-page img {
-  width: 17.5px;
-  height: 17.5px;
-  border-radius: 50%;
-}
-
-.main-page h1 {
-  color: var(--neutral-white);
-  font-weight: var(--fw-bold);
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.main-page p {
-  color: var(--neutral-light-grey);
-  margin-bottom: 20px;
-}
-
-.score-rating {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
-
-.rating {
-  color: var(--neutral-light-grey);
-
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-
-  display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
-.rating:hover {
-  background-color: var(--primary-color);
-  cursor: pointer;
-  color: var(--neutral-blue);
-}
-
-.rating:active,
-.submit-btn:active {
-  background-color: var(--neutral-white);
-  cursor: pointer;
-  color: var(--neutral-blue);
-}
-
-.submit-btn {
-  padding: 10px;
-  border-radius: 25px;
-  border: none;
-  text-transform: uppercase;
-  background-color: var(--primary-color);
-  font-weight: var(--fw-regular);
-  padding-bottom: 2.5px;
-  font-weight: var(--fw-bold);
-
-  height: 50px;
-
-  letter-spacing: 1px;
-} */
